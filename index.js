@@ -30,10 +30,10 @@ const STATUS_MAP = {
 // Edit below line 
 
 //--------BOOK1-----------
-const statusBook1 = document.getElementById("book1");
-const reserveBtnBook1 = document.querySelector(".reserve");
-const checkoutBtnBook1 = document.querySelector(".checkout");
-const checkinBtnBook1 = document.querySelector(".checkin");
+const statusBook1 = document.querySelector("#book1 > p > .status");
+const reserveBtnBook1 = document.querySelector("#book1 > .reserve");
+const checkoutBtnBook1 = document.querySelector("#book1 > .checkout");
+const checkinBtnBook1 = document.querySelector("#book1 > .checkin");
 
 status = selector(status)
 reserve = selector(reserve)
@@ -45,6 +45,19 @@ reserve = selector(reserve)
 checkout = selector(checkout)
 checkin = selector(checkin)
 
+
+//--------BOOK2-----------
+const statusBook2 = document.querySelector("#book2 > p > .status");
+const reserveBtnBook2 = document.querySelector("#book2 > .reserve");
+const checkoutBtnBook2 = document.querySelector("#book2 > .checkout");
+const checkinBtnBook2 = document.querySelector("#book2 > .checkin");
+
+
+//--------BOOK3-----------
+const statusBook3 = document.querySelector("#book3 > p > .status");
+const reserveBtnBook3 = document.querySelector("#book3 > .reserve");
+const checkoutBtnBook3 = document.querySelector("#book3 > .checkout");
+const checkinBtnBook3 = document.querySelector("#book3 > .checkin");
 /*checkin.0.color = none
 status.0.style.color = STATUS_MAP.status.color
 reserve.0 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
