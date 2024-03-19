@@ -7,7 +7,7 @@ const STATUS_MAP = {
         canCheckout: true,
         canCheckIn: false,
     },
-    reserved: {
+    reserved: { 
         color: 'blue',
         canReserve: false,
         canCheckout: true,
@@ -29,10 +29,11 @@ const STATUS_MAP = {
 
 // Edit below line 
 
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
+//--------BOOK1-----------
+const statusBook1 = document.getElementById("book1");
+const reserveBtnBook1 = document.querySelector(".reserve");
+const checkoutBtnBook1 = document.querySelector(".checkout");
+const checkinBtnBook1 = document.querySelector(".checkin");
 
 status = selector(status)
 reserve = selector(reserve)
@@ -44,7 +45,7 @@ reserve = selector(reserve)
 checkout = selector(checkout)
 checkin = selector(checkin)
 
-checkin.0.color = none
+/*checkin.0.color = none
 status.0.style.color = STATUS_MAP.status.color
 reserve.0 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.0 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
@@ -60,4 +61,4 @@ checkin.2.color = none
 status.2.style.color = STATUS_MAP.status.color
 reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'*/
