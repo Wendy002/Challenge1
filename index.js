@@ -35,15 +35,17 @@ const reserveBtnBook1 = document.querySelector(".reserve");
 const checkoutBtnBook1 = document.querySelector(".checkout");
 const checkinBtnBook1 = document.querySelector(".checkin");
 
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
+//--------BOOK2-----------
+const statusBook2 = document.getElementById("book2");
+const reserveBtnBook2 = document.querySelector(".reserve");
+const checkoutBtnBook2 = document.querySelector(".checkout");
+const checkinBtnBook2 = document.querySelector(".checkin");
 
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
+//--------BOOK3-----------
+const statusBook3 = document.getElementById("book3");
+const reserveBtnBook3 = document.querySelector(".reserve");
+const checkoutBtnBook3 = document.querySelector(".checkout");
+const checkinBtnBook3 = document.querySelector(".checkin");
 
 /*checkin.0.color = none
 status.0.style.color = STATUS_MAP.status.color
