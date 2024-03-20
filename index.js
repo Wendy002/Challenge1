@@ -48,14 +48,7 @@ const reserveBtnBook3 = document.querySelector("#book3 > .reserve");
 const checkoutBtnBook3 = document.querySelector("#book3 > .checkout");
 const checkinBtnBook3 = document.querySelector("#book3 > .checkin");
 
-
-
-/*checkin.0.color = none
-status.0.style.color = STATUS_MAP.status.color
-reserve.0 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.0 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-*/
+                              
 
 //---------Controls for book1-------
 checkinBtnBook1.style.color = "";
@@ -64,15 +57,16 @@ reserveBtnBook1.disabled = STATUS_MAP[statusBook1.textContent].canReserve ? fals
 checkoutBtnBook1.disabled = STATUS_MAP[statusBook1.textContent].canCheckout ? false : true;
 checkinBtnBook1.disabled = STATUS_MAP[statusBook1.textContent].canCheckIn ? false : true;
 
-/*checkin.1.color = none
-status.1.style.color = STATUS_MAP.status.color
-reserve.1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+//---------Controls for book2-------
+checkinBtnBook2.style.color = "";
+statusBook2.style.color = STATUS_MAP[statusBook2.textContent].color;
+reserveBtnBook2.disabled = STATUS_MAP[statusBook2.textContent].canReserve ? false : true;
+checkoutBtnBook2.disabled = STATUS_MAP[statusBook2.textContent].canCheckout ? false : true;
+checkinBtnBook2.disabled = STATUS_MAP[statusBook2.textContent].canCheckIn ? false : true;
 
-checkin.2.color = none
-status.2.style.color = STATUS_MAP.status.color
-reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'*/
-
+//---------Controls for book3-------
+checkinBtnBook3.style.color = "";
+statusBook3.style.color = STATUS_MAP[statusBook3.textContent].color;
+reserveBtnBook3.disabled = STATUS_MAP[statusBook3.textContent].canReserve ? false : true;
+checkoutBtnBook3.disabled = STATUS_MAP[statusBook3.textContent].canCheckout ? false : true;
+checkinBtnBook3.disabled = STATUS_MAP[statusBook3.textContent].canCheckIn ? false : true;
