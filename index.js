@@ -55,9 +55,10 @@ status.0.style.color = STATUS_MAP.status.color
 reserve.0 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.0 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
 checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-//---------Controls for button1--------
+*/
 
-checkinBtnBook1.style.color = none;
+//---------Controls for button1-------
+checkinBtnBook1.color = none;
 statusBook1.style.color = STATUS_MAP.statusBook1.color;
 reserveBtnBook1.disabled = STATUS_MAP.statusBook1.canReserve ? false : true;
 checkoutBtnBook1.disabled = STATUS_MAP.statusBook1.canCheckout ? false : true;
@@ -74,4 +75,4 @@ status.2.style.color = STATUS_MAP.status.color
 reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
 checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'*/
-console.log(statusBook1);
+console.log(reserveBtnBook1.disabled);
