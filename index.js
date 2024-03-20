@@ -47,13 +47,15 @@ const reserveBtnBook3 = document.querySelector(".reserve");
 const checkoutBtnBook3 = document.querySelector(".checkout");
 const checkinBtnBook3 = document.querySelector(".checkin");
 
-/*checkin.0.color = none
-status.0.style.color = STATUS_MAP.status.color
-reserve.0 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.0 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+//---------Controls for button1--------
 
-checkin.1.color = none
+checkinBtnBook1.style.color = none;
+statusBook1.style.color = STATUS_MAP.statusBook1.color;
+reserveBtnBook1.disabled = STATUS_MAP.statusBook1.canReserve ? false : true;
+checkoutBtnBook1.disabled = STATUS_MAP.statusBook1.canCheckout ? false : true;
+checkinBtnBook1.disabled = STATUS_MAP.statusBook1.canCheckIn ? false : true;
+
+/*checkin.1.color = none
 status.1.style.color = STATUS_MAP.status.color
 reserve.1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
@@ -64,3 +66,4 @@ status.2.style.color = STATUS_MAP.status.color
 reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
 checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'*/
+console.log(statusBook1);
