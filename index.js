@@ -59,10 +59,11 @@ checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
 
 //---------Controls for book1-------
 checkinBtnBook1.style.color = "";
-statusBook1.style.color = STATUS_MAP.statusBook1.innertetx;
-reserveBtnBook1.disabled = STATUS_MAP.statusBook1.canReserve ? false : true;
-checkoutBtnBook1.disabled = STATUS_MAP.statusBook1.canCheckout ? false : true;
-checkinBtnBook1.disabled = STATUS_MAP.statusBook1.canCheckIn ? false : true;
+statusBook1.style.color = STATUS_MAP[statusBook1.textContent].color;
+reserveBtnBook1.disabled = STATUS_MAP[statusBook1.textContent].canReserve ? false : true;
+checkoutBtnBook1.disabled = STATUS_MAP[statusBook1.textContent].canCheckout ? false : true;
+checkinBtnBook1.disabled = STATUS_MAP[statusBook1.textContent].canCheckIn ? false : true;
+
 /*checkin.1.color = none
 status.1.style.color = STATUS_MAP.status.color
 reserve.1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
@@ -75,4 +76,3 @@ reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
 checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
 checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'*/
 
-console.log(statusBook1.textContent);
